@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    body {
+        background: linear-gradient(to bottom, #5e3083, #4a9d9c);
+    }
+
+    main {
+        width: 800px;
+        height: 45vh;
+    }
+
+    main > img {
+    width: 40%;
+    height: 100%;
+    }
+}
