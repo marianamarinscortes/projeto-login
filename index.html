@@ -10,21 +10,29 @@
 </head>
 <body>
     <main>
-        <img src="imagens/metal.jpg" alt="Prédio">
-        <h1>Login</h1>
-        <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-        <form action="login.py" method="post">
-            <div class="caixa">
-                <span id="pessoa" class="material-symbols-outlined">person</span>
-                <input type="email" name="email" id="iemail" required placeholder="seu e-mail">
+        <section id="login">
+            <div id="imagem"></div>
+
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.py" method="post" autocomplete="on">
+
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" required placeholder="seu e-mail" autocomplete="email" maxlength="30">
+                    </div>
+                    
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="password" id="ipassword" required placeholder="sua senha" autocomplete="current-password" minlength="8" maxlength="20">
+                    </div>
+                    <input type="submit" id="ientrar" value="Entrar">
+                    <a href="esqueci.html" class="botao">Esqueci a senha</a>
+
+                </form>
             </div>
-            <div class="caixa">
-                <span id="chave" class="material-symbols-outlined">key</span>
-                <input type="password" name="password" id="ipassword" required placeholder="sua senha">
-            </div>
-            <input type="submit" id="ientrar" value="Entrar">
-            <a href="esqueci.html">Esqueci a senha</a>
-        </form>
+        </section>
     </main>
 </body>
 </html>
